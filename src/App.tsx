@@ -56,6 +56,7 @@ const App: FC = () => {
   });
 
   const onResetGame = useCallback(() => {
+    alert("ایا مطمئن هستید؟")
     setGameStatus('restart');
   }, [setGameStatus]);
 
@@ -122,7 +123,7 @@ const App: FC = () => {
               <ScoreBoard total={best} title="بهترین" />
             </Box>
           </Box>
-          {/* <Box marginBlockStart="s2" marginBlockEnd="s6" inlineSize="100%">
+          <Box marginBlockStart="s2" marginBlockEnd="s6" inlineSize="100%">
             <Control
               rows={rows}
               cols={cols}
@@ -130,7 +131,7 @@ const App: FC = () => {
               onChangeRow={setRows}
               onChangeCol={setCols}
             />
-          </Box> */}
+          </Box>
           <GameBoard
             tiles={tiles}
             boardSize={GRID_SIZE}

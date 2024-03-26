@@ -19,13 +19,13 @@ const Control: FC<ControlProps> = ({
   onChangeRow,
   onChangeCol,
 }) => (
-  <Box inlineSize="100%" justifyContent="space-between">
+  <Box inlineSize="100%" justifyContent="end">
     <Button onClick={onReset}>
       <Text fontSize={16} textTransform="capitalize">
-        new game
+        شروع مجدد
       </Text>
     </Button>
-    <Box>
+    {/* <Box>
       <Box marginInlineEnd="s6" flexDirection="column">
         <Text textTransform="uppercase" fontSize={13} color="primary">
           rows
@@ -78,7 +78,7 @@ const Control: FC<ControlProps> = ({
           </Button>
         </Box>
       </Box>
-    </Box>
+    </Box> */}
   </Box>
 );
 
