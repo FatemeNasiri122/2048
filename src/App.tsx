@@ -56,7 +56,11 @@ const App: FC = () => {
   });
 
   const onResetGame = useCallback(() => {
-    alert("ایا مطمئن هستید؟")
+    const sure = confirm("ایا مطمئن هستید؟");
+    console.log(sure)
+    if (!sure) {
+      return
+    }
     setGameStatus('restart');
   }, [setGameStatus]);
 
