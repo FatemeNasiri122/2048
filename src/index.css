@@ -1,0 +1,12 @@
+@font-face {
+    font-family: yekan;
+    src: url("./font/IRANYekanRegularFaNum.ttf");
+}
+
+body {
+    font-family: yekan;
+}
+
+.container {
+    margin-top: 50px;
+}
